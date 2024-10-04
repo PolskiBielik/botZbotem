@@ -64,7 +64,7 @@ wyślij_zapytanie_openai(Zapytanie, Odpowiedź) :-
     ).
 
 % Funkcja drukująca odpowiedź
-drukuj_odpowiedz(Bot, Odpowiedź) :-
+drukuj_odpowiedź(Bot, Odpowiedź) :-
     format('~w odpowiada: "~w"~n', [Bot, Odpowiedź]),
     nl.
 
@@ -93,7 +93,7 @@ dialog_pomiędzy_botami(Bot1, Bot2, Zapytanie, Licznik) :-
     drukuj_pytanie(Bot1, Zapytanie),
     wyślij_zapytanie_openai(Zapytanie, Odpowiedź1),
     daj_zawartość(Odpowiedź1, Odpowiedź1Zawartość),
-    drukuj_odpowiedz(Bot2, Odpowiedź1Zawartość),
+    drukuj_odpowiedź(Bot2, Odpowiedź1Zawartość),
 
     % Poproś WMJ o sformułowanie nowego pytania na podstawie odpowiedzi
     format(atom(AnalizaZapytania1), 
@@ -106,7 +106,7 @@ dialog_pomiędzy_botami(Bot1, Bot2, Zapytanie, Licznik) :-
 
     % Przekaż nowe pytanie do drugiego bota
     daj_zawartość(Odpowiedź2, Odpowiedź2Zawartość),
-    drukuj_odpowiedz(Bot1, Odpowiedź2Zawartość),
+    drukuj_odpowiedź(Bot1, Odpowiedź2Zawartość),
 
     % Poproś WMJ o sformułowanie nowego pytania na podstawie odpowiedzi
     format(atom(AnalizaZapytania2), 
