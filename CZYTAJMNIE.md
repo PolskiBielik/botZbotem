@@ -51,3 +51,13 @@ swipl -s dialog.pl
 ### bzb.sh (pod Linuksem)
 
 bzb.sh
+
+## TakAlboNie
+
+### swipl
+
+swipl -s takalbonie.pl
+
+### 10pytań.sh (pod Linuksem)
+
+10pytań.sh

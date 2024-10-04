@@ -1,0 +1,53 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to jest ssak?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę jest drapieżnikiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę jest dużym drapieżnikiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę ma charakterystyczne pręgowane futro i jest znane z polowań na zebry?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 5
+Bot1 pyta: "Czy to zwierzę jest znane z polowań na antylopy?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 4
+Bot1 pyta: "Czy to zwierzę jest znane z polowań na bawoły?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 3
+Bot1 pyta: "Czy to zwierzę ma charakterystyczne cętkowane futro i jest znane z polowań na gnu?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 2
+Bot1 pyta: "Czy to zwierzę jest znane z polowań na gazele?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 1
+Bot1 pyta: "Czy to zwierzę jest znane z polowań na żyrafy?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, moja odpowiedź brzmi: To jest lew. Uzasadnienie: - Lew jest zwierzęciem. - Lew jest ssakiem. - Lew jest drapieżnikiem. - Lew jest dużym drapieżnikiem. - Chociaż lwy mają pręgowane futro,".
+Bot1: Niestety, nie zgadłem. Poprawna odpowiedź to "Bielik".
