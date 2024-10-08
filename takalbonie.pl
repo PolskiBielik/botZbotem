@@ -19,8 +19,11 @@ bot2('Bot2').  % Odpowiadacz
 co_to_jest('Bielik').  % Obiekt do odgadnięcia (np. 'Bielik' - gatunek orła)
 pierwsze_pytanie('Czy to jest zwierzę?').
 licznik_rozmowy(10).  % Ilość rund pytań
-maksymalna_liczba_tokenów(100).
+maksymalna_liczba_tokenów(200).
 temperatura_dialogu(0.7).
+
+% Wyjaśnienie obiektu
+wyjasnienie_co_to_jest('Bielik', 'Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.').
 
 % WMJ czat URL API
 model_bielika('Bielik-11B-v2.3-Instruct.Q4_K_M').
@@ -63,7 +66,7 @@ wyślij_zapytanie_openai(Zapytanie, PromptSystemowy, Odpowiedź) :-
         )
     ).
 
-% **Funkcje do wyświetlania**
+% Funkcje do wyświetlania
 
 % Wyświetla pytanie bota
 drukuj_pytanie(Bot, Pytanie) :-
@@ -85,7 +88,7 @@ daj_zawartość(OdpowiedźAPI, Zawartosc) :-
         fail
     ).
 
-% **Funkcja rozpoczynająca dialog między dwoma botami**
+% Funkcja rozpoczynająca dialog między dwoma botami
 dialog_botow :-
     bot1(Bot1),
     bot2(Bot2),
@@ -94,24 +97,53 @@ dialog_botow :-
     co_to_jest(CoToJest),
     dialog_pomiedzy_botami(Bot1, Bot2, PierwszePytanie, Licznik, CoToJest, []).
 
-% **Funkcja prowadząca dialog między botami, ograniczona liczbą wymian**
-dialog_pomiedzy_botami(Bot1, _, _, 0, CoToJest, Historia) :- !,
+% Funkcja prowadząca dialog między botami, ograniczona liczbą wymian
+dialog_pomiedzy_botami(Bot1, Bot2, _, 0, CoToJest, Historia) :- !,
     % Wyświetl licznik
     format('Licznik: ~w~n', [0]),
+    
     % Bot1 dokonuje ostatecznego zgadywania
     system_prompt_pytacza(PromptPytacza),
     format(atom(HistoriaTekst), '~w', [Historia]),
     format(atom(PolecenieZgadnij), 'Na podstawie poniższej historii pytań i odpowiedzi, spróbuj zgadnąć, co to jest: ~w', [HistoriaTekst]),
+    
+    % Wysyłanie zapytania o zgadywanie
     wyślij_zapytanie_openai(PolecenieZgadnij, PromptPytacza, ZgadnijJSON),
     (   daj_zawartość(ZgadnijJSON, ZgadnijSurowe)
     ->  normalizuj_pytanie(ZgadnijSurowe, Zgadnij),
         format('~w: Myślę, że to jest "~w".~n', [Bot1, Zgadnij]),
-        % Sprawdź, czy zgadł poprawnie
-        string_lower(Zgadnij, ZgadnijLower),
-        string_lower(CoToJest, CoToJestLower),
-        (   ZgadnijLower = CoToJestLower
-        ->  format('~w: Zgadłem poprawnie!~n', [Bot1])
-        ;   format('~w: Niestety, nie zgadłem. Poprawna odpowiedź to "~w".~n', [Bot1, CoToJest])
+        nl,
+        
+        % Formatowanie potwierdzenia
+        format(atom(PotwierdzeniePrompt), 
+               'Czy "~w" to poprawna odpowiedź na pytanie, co to jest: "~w"? Odpowiedz tylko "tak" albo "nie".', 
+               [Zgadnij, CoToJest]),
+        
+        % Pobieranie system prompt dla odpowiadacza
+        system_prompt_odpowiadacza(PromptSystemowy),
+        
+        % Wysyłanie potwierdzenia
+        wyślij_zapytanie_openai(PotwierdzeniePrompt, PromptSystemowy, PotwierdzenieJSON),
+        (   daj_zawartość(PotwierdzenieJSON, PotwierdzenieSurowe)
+        ->  normalizuj_odpowiedz(PotwierdzenieSurowe, Potwierdzenie),
+            drukuj_odpowiedź(Bot2, Potwierdzenie),
+            (   Potwierdzenie = "tak"
+            ->  format('~w: Zgadłem poprawnie!~n', [Bot1]),
+                (   wyjasnienie_co_to_jest(CoToJest, Wyjasnienie)
+                ->  format('~w: Świetnie! "~w" to: ~w~n', [Bot2, Zgadnij, Wyjasnienie])
+                ;   format('~w: Świetnie! "~w" jest poprawną odpowiedzią.~n', [Bot2, Zgadnij])
+                )
+            ;   Potwierdzenie = "nie"
+            ->  format('~w: Niestety, nie zgadłem. Poprawna odpowiedź to "~w".~n', [Bot1, CoToJest]),
+                (   wyjasnienie_co_to_jest(CoToJest, Wyjasnienie)
+                ->  format('~w: Niestety, "~w" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~w". ~w~n', [Bot2, Zgadnij, CoToJest, Wyjasnienie])
+                ;   format('~w: Niestety, "~w" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~w".~n', [Bot2, Zgadnij, CoToJest])
+                )
+            ;   % Potwierdzenie = "nie wiem" lub inne
+                format('~w: Nie jestem pewien, czy "~w" to poprawna odpowiedź.~n', [Bot2, Zgadnij])
+            )
+        ;   format('Błąd podczas potwierdzania zgadywania.~n'),
+            fail
         )
     ;   format('Błąd podczas przetwarzania odpowiedzi zgadywania.~n'),
         fail
@@ -126,7 +158,11 @@ dialog_pomiedzy_botami(Bot1, Bot2, Pytanie, Licznik, CoToJest, Historia) :-
     drukuj_pytanie(Bot1, Pytanie),
     %
     % Bot2 odpowiada
-    format(atom(PolecenieOdpowiedź), 'Biorąc pod uwagę, że to chodzi o "~w", odpowiedz na pytanie: "~w". Odpowiedz tylko "tak" albo "nie".', [CoToJest, Pytanie]),
+    % Zmodyfikowano tutaj, aby użyć wyjaśnienia
+    (   wyjasnienie_co_to_jest(CoToJest, Wyjasnienie)
+    ->  format(atom(PolecenieOdpowiedź), 'Biorąc pod uwagę, że to chodzi o "~w", który jest: "~w", odpowiedz na pytanie: "~w". Odpowiedz tylko "tak" albo "nie".', [CoToJest, Wyjasnienie, Pytanie])
+    ;   format(atom(PolecenieOdpowiedź), 'Biorąc pod uwagę, że to chodzi o "~w", odpowiedz na pytanie: "~w". Odpowiedz tylko "tak" albo "nie".', [CoToJest, Pytanie])
+    ),
     wyślij_zapytanie_openai(PolecenieOdpowiedź, PromptOdpowiadacza, OdpowiedźJSON),
     (   daj_zawartość(OdpowiedźJSON, OdpowiedźSurowa)
     ->  % Upewnij się, że odpowiedź to "tak" lub "nie"
@@ -154,7 +190,7 @@ dialog_pomiedzy_botami(Bot1, Bot2, Pytanie, Licznik, CoToJest, Historia) :-
         fail
     ).
 
-% **Normalizuj odpowiedź, aby upewnić się, że to "tak" lub "nie"**
+% Normalizuj odpowiedź, aby upewnić się, że to "tak" lub "nie"
 normalizuj_odpowiedz(OdpowiedźSurowa, Odpowiedź) :-
     string_lower(OdpowiedźSurowa, OdpowiedźMala),
     (   sub_string(OdpowiedźMala, _, _, _, "tak")
@@ -164,14 +200,14 @@ normalizuj_odpowiedz(OdpowiedźSurowa, Odpowiedź) :-
     ;   Odpowiedź = "nie wiem"
     ).
 
-% **Normalizuj pytanie, usuwając zbędne białe znaki**
+% Normalizuj pytanie, usuwając zbędne białe znaki
 normalizuj_pytanie(PytanieSurowe, Pytanie) :-
     normalize_space(string(Pytanie), PytanieSurowe).
 
-% **Przykładowe wykonanie dialogu**
+% Przykładowe wykonanie dialogu
 przykladowy_dialog :-
     dialog_botow,
     halt.
 
-% **Automatyczne wykonanie po załadowaniu**
+% Automatyczne wykonanie po załadowaniu
 :- przykladowy_dialog.

@@ -1,0 +1,57 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "### ZADANIE: ### Instrukcja: Na podstawie poniższej historii pytań i odpowiedzi, zadaj kolejne pytanie dotyczące osoby lub obiektu, na które odpowiedź to "tak" lub "nie". Historia pytań i odpowiedzi: 1. Czy to jest zwierzę? - tak ### Twoje pytanie: Czy to zwierzę ma cztery nogi? - tak/nie"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę ma pióra? - tak/nie-nie"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę lata? - tak/nie"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Twoje pytanie: Czy to zwierzę ma długi ogon? - tak/nie."
+
+Bot2 odpowiada: "nie"
+
+Licznik: 5
+Bot1 pyta: "Twoje pytanie: Czy to zwierzę ma dziob? - tak/nie."
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Czy to zwierzę ma ostre szpony? - tak/nie."
+
+Bot2 odpowiada: "tak"
+
+Licznik: 3
+Bot1 pyta: "Twoje pytanie: Czy to zwierzę jest ptakiem drapieżnym? - tak/nie."
+
+Bot2 odpowiada: "tak"
+
+Licznik: 2
+Bot1 pyta: "Twoje pytanie: Czy to zwierzę żyje na wolności? - tak/nie."
+
+Bot2 odpowiada: "tak"
+
+Licznik: 1
+Bot1 pyta: "Twoje pytanie: Czy to zwierzę jest powszechnie znane i opisywane w literaturze jako symbol mądrości i długowieczności? - tak/nie."
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Twoje pytanie: Czy to zwierzę jest bielikiem? - tak/nie. Odpowiedź: tak".
+
+Bot2 odpowiada: "nie"
+
+Bot1: Niestety, nie zgadłem. Poprawna odpowiedź to "Bielik".
+Bot2: Niestety, "Twoje pytanie: Czy to zwierzę jest bielikiem? - tak/nie. Odpowiedź: tak" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "Bielik". Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.
