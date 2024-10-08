@@ -1,0 +1,60 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę żyje w stadzie?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę jest drapieżnikiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę jest mięsożerne?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę ma futro?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 5
+Bot1 pyta: "Czy to zwierzę jest ssakiem?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 4
+Bot1 pyta: "Czy to zwierzę ma pióra?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 3
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 2
+Bot1 pyta: "Na podstawie podanych pytań i odpowiedzi, kolejne pytanie mogłoby brzmieć: Czy to zwierzę jest domowym zwierzęciem hodowlanym? (Uzasadnienie: Wszystkie poprzednie pytania prowadziły do odpowiedzi "tak" lub "nie". Pytanie o to, czy zwierzę jest domowym zwierzęciem hodowlanym, może pomóc w ostatecznym zidentyfikowaniu, o jakie konkretne zwierzę chodzi.)"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 1
+Bot1 pyta: "Czy to zwierzę jest ptakiem wodnym?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, można stwierdzić, że opisywane zwierzę to: **Kot domowy** Uzasadnienie: 1. Czy to jest zwierzę? - tak 2. Czy to zwierzę żyje w stadzie? - nie (koty domowe nie żyją w stadach, są raczej samotnikami) 3. Czy to zwierzę jest drapieżnikiem? - tak (koty są drapieżnikami) 4. Czy to zwierzę jest mięsożerne? - tak (koty jedzą głównie mięso) 5. Czy to zwierzę ma futro? - nie (koty nie mają futra, mają sierść) 6. C".
+
+Bot2 odpowiada: "nie"
+
+Bot1: Niestety, nie zgadłem. Poprawna odpowiedź to "Bielik".
+Bot2: Niestety ta odpowiedź, 
+"Na podstawie podanych pytań i odpowiedzi, można stwierdzić, że opisywane zwierzę to: **Kot domowy** Uzasadnienie: 1. Czy to jest zwierzę? - tak 2. Czy to zwierzę żyje w stadzie? - nie (koty domowe nie żyją w stadach, są raczej samotnikami) 3. Czy to zwierzę jest drapieżnikiem? - tak (koty są drapieżnikami) 4. Czy to zwierzę jest mięsożerne? - tak (koty jedzą głównie mięso) 5. Czy to zwierzę ma futro? - nie (koty nie mają futra, mają sierść) 6. C"
+ nie jest poprawną odpowiedzią. Poprawna odpowiedź to: 
+"Bielik". Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.

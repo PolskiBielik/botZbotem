@@ -1,0 +1,59 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę żyje w wodzie?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę jest ssakiem?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę jest lądowe?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę ma futro?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 5
+Bot1 pyta: "Czy to zwierzę jest roślinożerne?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 4
+Bot1 pyta: "Czy to zwierzę ma kły?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 3
+Bot1 pyta: "Czy to zwierzę ma ogon?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 2
+Bot1 pyta: "Czy to zwierzę ma skrzydła?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 1
+Bot1 pyta: "Czy to zwierzę potrafi latać?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, mogę zgadnąć, że chodzi o ptaka. Oto uzasadnienie: 1. "Czy to jest zwierzę?" - Tak, wskazuje to na zwierzę. 2. "Czy to zwierzę żyje w wodzie?" - Nie, wyklucza to większość ryb i gadów. 3. "Czy to zwierzę jest ssakiem?" - Nie, eliminuje ssaki. 4. "Czy to zwierzę jest lądowe?" - Tak, sugeruje to, że żyje na lądzie, ale nie jest to ograniczeniem wyłącznie dla ptaków. 5. "Czy to zwierzę ma futro?" - Nie, ptaki".
+
+Bot2 odpowiada: "tak"
+
+Bot1: Zgadłem poprawnie!
+Bot2: Świetnie! 
+"Na podstawie podanych pytań i odpowiedzi, mogę zgadnąć, że chodzi o ptaka. Oto uzasadnienie: 1. "Czy to jest zwierzę?" - Tak, wskazuje to na zwierzę. 2. "Czy to zwierzę żyje w wodzie?" - Nie, wyklucza to większość ryb i gadów. 3. "Czy to zwierzę jest ssakiem?" - Nie, eliminuje ssaki. 4. "Czy to zwierzę jest lądowe?" - Tak, sugeruje to, że żyje na lądzie, ale nie jest to ograniczeniem wyłącznie dla ptaków. 5. "Czy to zwierzę ma futro?" - Nie, ptaki"
+ to: Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.

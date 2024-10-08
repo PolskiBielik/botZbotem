@@ -1,0 +1,60 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę jest drapieżnikiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę jest mięsożerne?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę żyje na drzewach?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę jest ssakiem?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 5
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Czy to ptak drapieżny?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 3
+Bot1 pyta: "Czy to ptak drapieżny z rodziny jastrzębiowatych?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 2
+Bot1 pyta: "Czy ten ptak drapieżny z rodziny jastrzębiowatych jest aktywny głównie w ciągu dnia?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 1
+Bot1 pyta: "Czy ten ptak drapieżny z rodziny jastrzębiowatych jest aktywny głównie w ciągu dnia? - tak Na podstawie podanych pytań i odpowiedzi, można odgadnąć, że chodzi o: Sokoła wędrownego (Falco peregrinus) To ptak drapieżny z rodziny jastrzębiowatych, który jest aktywny głównie w ciągu dnia. Kolejne pytanie, na które odpowiedź to "tak" lub "nie": Czy sokół wędrowny ma charakterystyczny kształt dzioba?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Sokół wędrowny (Falco peregrinus) ma charakterystyczny, haczykowaty dziób, który jest typowy dla ptaków drapieżnych. Ten kształt dzioba ułatwia mu chwytanie i rozrywanie zdobyczy. Tak więc odpowiedź na pytanie "Czy sokół wędrowny ma charakterystyczny kształt dzioba?" brzmi "tak".".
+
+Bot2 odpowiada: "nie"
+
+Bot1: Niestety, nie zgadłem. Poprawna odpowiedź to "Bielik".
+Bot2: Niestety ta odpowiedź, 
+"Sokół wędrowny (Falco peregrinus) ma charakterystyczny, haczykowaty dziób, który jest typowy dla ptaków drapieżnych. Ten kształt dzioba ułatwia mu chwytanie i rozrywanie zdobyczy. Tak więc odpowiedź na pytanie "Czy sokół wędrowny ma charakterystyczny kształt dzioba?" brzmi "tak"."
+ nie jest poprawną odpowiedzią. Poprawna odpowiedź to: 
+"Bielik". Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.
