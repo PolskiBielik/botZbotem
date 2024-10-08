@@ -115,9 +115,10 @@ dialog_pomiedzy_botami(Bot1, Bot2, _, 0, CoToJest, Historia) :- !,
         nl,
         
         % Formatowanie potwierdzenia
+        wyjasnienie_co_to_jest(CoToJest, Wyjasnienie),
         format(atom(PotwierdzeniePrompt), 
-               'Czy "~w" to poprawna odpowiedź na pytanie, co to jest: "~w"? Odpowiedz tylko "tak" albo "nie".', 
-               [Zgadnij, CoToJest]),
+               'Zanalizuj czy ta odpowiedź "~w" jest poprawną odpowiedźią na pytanie o obiekt "~w" wiedząć że tak on jest tak opisany "~w". Odpowiedz tylko "tak" albo "nie".', 
+               [Zgadnij, CoToJest, Wyjasnienie]),
         
         % Pobieranie system prompt dla odpowiadacza
         system_prompt_odpowiadacza(PromptSystemowy),
@@ -130,14 +131,14 @@ dialog_pomiedzy_botami(Bot1, Bot2, _, 0, CoToJest, Historia) :- !,
             (   Potwierdzenie = "tak"
             ->  format('~w: Zgadłem poprawnie!~n', [Bot1]),
                 (   wyjasnienie_co_to_jest(CoToJest, Wyjasnienie)
-                ->  format('~w: Świetnie! "~w" to: ~w~n', [Bot2, Zgadnij, Wyjasnienie])
-                ;   format('~w: Świetnie! "~w" jest poprawną odpowiedzią.~n', [Bot2, Zgadnij])
+                ->  format('~w: Świetnie! "~n~w~n" to: ~w~n', [Bot2, Zgadnij, Wyjasnienie])
+                ;   format('~w: Świetnie! "~n~w~n" jest poprawną odpowiedzią.~n', [Bot2, Zgadnij])
                 )
             ;   Potwierdzenie = "nie"
             ->  format('~w: Niestety, nie zgadłem. Poprawna odpowiedź to "~w".~n', [Bot1, CoToJest]),
                 (   wyjasnienie_co_to_jest(CoToJest, Wyjasnienie)
-                ->  format('~w: Niestety, "~w" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~w". ~w~n', [Bot2, Zgadnij, CoToJest, Wyjasnienie])
-                ;   format('~w: Niestety, "~w" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~w".~n', [Bot2, Zgadnij, CoToJest])
+                ->  format('~w: Niestety ta odpowiedź, "~n~w~n" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~n~w". ~w~n', [Bot2, Zgadnij, CoToJest, Wyjasnienie])
+                ;   format('~w: Niestety ta odpowiedź, "~n~w~n" nie jest poprawną odpowiedzią. Poprawna odpowiedź to: "~n~w".~n', [Bot2, Zgadnij, CoToJest])
                 )
             ;   % Potwierdzenie = "nie wiem" lub inne
                 format('~w: Nie jestem pewien, czy "~w" to poprawna odpowiedź.~n', [Bot2, Zgadnij])

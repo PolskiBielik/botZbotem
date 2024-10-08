@@ -1,0 +1,59 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę ma futro?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę ma pióra?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę ma skrzydła?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 5
+Bot1 pyta: "Na podstawie podanych informacji, możemy stwierdzić, że opisywane zwierzę to ptak. Teraz, kolejne pytanie dotyczące tego ptaka: Czy ten ptak jest ptakiem drapieżnym?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Czy ten ptak drapieżny jest zagrożony wyginięciem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 3
+Bot1 pyta: "Na podstawie podanych informacji, możemy stwierdzić, że opisywane zwierzę to ptak. Teraz, kolejne pytanie dotyczące tego ptaka: Czy ten ptak drapieżny jest chroniony prawem? - tak"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 2
+Bot1 pyta: "Czy ten ptak drapieżny jest często spotykany w środowisku naturalnym? - nie."
+
+Bot2 odpowiada: "nie"
+
+Licznik: 1
+Bot1 pyta: "Czy ten ptak drapieżny jest łatwy do rozpoznania w terenie? (odpowiedź: tak lub nie)"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych informacji, opisywane zwierzę to ptak drapieżny, który jest chroniony prawem, ale nie jest łatwo spotykany w środowisku naturalnym. Dodatkowo, ten ptak jest zagrożony wyginięciem. Połączenie tych wskazówek sugeruje, że może to być bielik (Haliaeetus albicilla), ptak drapieżny z rodziny jastrzębiowatych. Bieliki są chronione prawem w wielu krajach, ale ich populacje są małe i zagrożone, co czyni je trudnymi do zaobserwowania w ich naturalnym środowisku. Ponadto, bieliki są".
+
+Bot2 odpowiada: "tak"
+
+Bot1: Zgadłem poprawnie!
+Bot2: Świetnie! "
+Na podstawie podanych informacji, opisywane zwierzę to ptak drapieżny, który jest chroniony prawem, ale nie jest łatwo spotykany w środowisku naturalnym. Dodatkowo, ten ptak jest zagrożony wyginięciem. Połączenie tych wskazówek sugeruje, że może to być bielik (Haliaeetus albicilla), ptak drapieżny z rodziny jastrzębiowatych. Bieliki są chronione prawem w wielu krajach, ale ich populacje są małe i zagrożone, co czyni je trudnymi do zaobserwowania w ich naturalnym środowisku. Ponadto, bieliki są
+" to: Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.
