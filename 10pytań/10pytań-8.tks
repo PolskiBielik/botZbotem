@@ -1,0 +1,59 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę mieszka w wodzie?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę ma pióra?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Oto kolejne pytanie dotyczące opisanego obiektu: Czy to ptak potrafi latać?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 5
+Bot1 pyta: "Oto kolejne pytanie dotyczące opisanego obiektu: Czy ten ptak ma długi dziób?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Oto kolejne pytanie dotyczące opisanego obiektu: Czy ten ptak ma charakterystyczne czerwone pióra? - tak"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 3
+Bot1 pyta: "Czy ten ptak ma długie nogi? (Tak/nie)"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 2
+Bot1 pyta: "Oto kolejne pytanie dotyczące opisanego obiektu: Czy ten ptak jest drapieżnikiem? (Tak/nie)"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 1
+Bot1 pyta: "Oto kolejne pytanie dotyczące opisanego obiektu: Czy ten ptak jest popularnym gatunkiem w Polsce? (Tak/nie)"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, wydaje się, że opisany obiekt to bielik. Jest to ptak drapieżny, który ma długi dziób, czerwone pióra i nie ma długich nóg. Bielik nie jest popularnym gatunkiem w Polsce, ale można go spotkać w niektórych rejonach kraju.".
+
+Bot2 odpowiada: "tak"
+
+Bot1: Zgadłem poprawnie!
+Bot2: Świetnie! 
+"Na podstawie podanych pytań i odpowiedzi, wydaje się, że opisany obiekt to bielik. Jest to ptak drapieżny, który ma długi dziób, czerwone pióra i nie ma długich nóg. Bielik nie jest popularnym gatunkiem w Polsce, ale można go spotkać w niektórych rejonach kraju."
+ to: Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.

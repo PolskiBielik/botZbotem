@@ -1,0 +1,60 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę jest ssakiem?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę ma pióra?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę potrafi latać?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 5
+Bot1 pyta: "Czy to zwierzę jest ptakiem drapieżnym?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Czy to zwierzę jest znane z tego, że poluje w dzień? (Wskazówka: Odpowiedź na to pytanie będzie "tak".)"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 3
+Bot1 pyta: "Czy to zwierzę jest znane z tego, że ma charakterystyczny krzyk lub śpiew? (Wskazówka: Odpowiedź na to pytanie będzie "nie".) - nie"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 2
+Bot1 pyta: "Czy to zwierzę jest znane z tego, że ma jaskrawe upierzenie?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 1
+Bot1 pyta: "Czy to zwierzę jest znane z tego, że ma specyficzny sposób polowania, polegający na nagłym ataku i szybkim poruszaniu się w powietrzu?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, mogę stwierdzić, że to zwierzę to sokół. Jest to ptak drapieżny, który poluje w dzień, ma pióra, potrafi latać i jest znany ze swojego specyficznego sposobu polowania, polegającego na nagłym ataku i szybkim poruszaniu się w powietrzu.".
+
+Bot2 odpowiada: "nie"
+
+Bot1: Niestety, nie zgadłem. Poprawna odpowiedź to "Bielik".
+Bot2: Niestety ta odpowiedź, 
+"Na podstawie podanych pytań i odpowiedzi, mogę stwierdzić, że to zwierzę to sokół. Jest to ptak drapieżny, który poluje w dzień, ma pióra, potrafi latać i jest znany ze swojego specyficznego sposobu polowania, polegającego na nagłym ataku i szybkim poruszaniu się w powietrzu."
+ nie jest poprawną odpowiedzią. Poprawna odpowiedź to: 
+"Bielik". Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.
