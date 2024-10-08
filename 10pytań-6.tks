@@ -1,0 +1,59 @@
+Licznik: 10
+Bot1 pyta: "Czy to jest zwierzę?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 9
+Bot1 pyta: "Czy to zwierzę żyje w wodzie?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 8
+Bot1 pyta: "Czy to zwierzę ma futro?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 7
+Bot1 pyta: "Czy to zwierzę ma pióra?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 6
+Bot1 pyta: "Czy to zwierzę jest ptakiem?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 5
+Bot1 pyta: "Czy to ptak latający?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 4
+Bot1 pyta: "Czy to ptak, który żyje na drzewach?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 3
+Bot1 pyta: "Czy to ptak wodny?"
+
+Bot2 odpowiada: "nie"
+
+Licznik: 2
+Bot1 pyta: "Czy to ptak drapieżny?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 1
+Bot1 pyta: "Czy to ptak, który poluje na ryby?"
+
+Bot2 odpowiada: "tak"
+
+Licznik: 0
+Bot1: Myślę, że to jest "Na podstawie podanych pytań i odpowiedzi, można odgadnąć, że jest to: **Bielik białogłowy (Haliaeetus leucocephalus)** Oto uzasadnienie: 1. Jest to zwierzę. 2. Nie jest to zwierzę wodne. 3. Nie ma futra. 4. Ma pióra. 5. Jest to ptak. 6. Jest to ptak latający. 7. Nie jest to ptak żyjący na drzewach. 8. Nie jest to ptak wodny. 9. Jest to ptak drapieżny. 10. Poluje na ryby. Bielik białogłowy jest dużym ptakiem drapież".
+
+Bot2 odpowiada: "tak"
+
+Bot1: Zgadłem poprawnie!
+Bot2: Świetnie! 
+"Na podstawie podanych pytań i odpowiedzi, można odgadnąć, że jest to: **Bielik białogłowy (Haliaeetus leucocephalus)** Oto uzasadnienie: 1. Jest to zwierzę. 2. Nie jest to zwierzę wodne. 3. Nie ma futra. 4. Ma pióra. 5. Jest to ptak. 6. Jest to ptak latający. 7. Nie jest to ptak żyjący na drzewach. 8. Nie jest to ptak wodny. 9. Jest to ptak drapieżny. 10. Poluje na ryby. Bielik białogłowy jest dużym ptakiem drapież"
+ to: Bielik  gatunek orła to duży ptak drapieżny z rodziny jastrzębiowatych, występujący w Europie i Azji.
