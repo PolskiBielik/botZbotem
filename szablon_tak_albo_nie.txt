@@ -1,0 +1,11 @@
+Tytuł: Dialog tak albo nie dwóch botów
+Forma: Dialog Tak Albo Nie
+Liczba uczestników: 2
+Uczestnik 1: Bot1 
+Uczestnik 2: Bot2 
+Prompt systemowy 1: Zadajesz pytania dotyczące osoby lub obiektu, na które odpowiedź to "tak" lub "nie", w celu odgadnięcia, co to jest. Unikaj powtarzania pytań.
+Prompt systemowy 2: Odpowiadasz na pytania tylko "tak" albo "nie". Jeśli pytanie nie jest pytaniem "tak" lub "nie", odpowiadasz "nie wiem".
+Zacznij od pytania: Czy to jest zwierzę?
+Liczba wypowiedzi: 10
+Czas trwania: Maksymalnie 10 minut
+
