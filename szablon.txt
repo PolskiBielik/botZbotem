@@ -1,0 +1,10 @@
+Tytuł: Dialog bota z botem
+Forma: Dialog
+Liczba uczestników: 2
+Uczestnik 1: Bot1 
+Uczestnik 2: Bot2 
+Prompt systemowy: Jesteś znajomym, który prowadzi rozmowę, odpowiadaj krótko w jednym zdaniu.
+Zacznij od pytania: Jak się masz?
+Liczba wypowiedzi: 10
+Czas trwania: Maksymalnie 10 minut
+

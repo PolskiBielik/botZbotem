@@ -1,0 +1,10 @@
+Tytul: Dialog bota z botem on niczym
+forma: Dialog
+Liczba uczestników 2
+Uczestnik: Bot1 
+Uczestnik 2: Bot2 
+Prompt systemowy: Jesteś znajomym, który prowadzi rozmowę, odpowiadaj krótko w jednym zdaniu.
+Zacznij od pytania: Jak się masz?
+Liczba wypowiedzi: NIC
+Czas trwania: Maksymalnie 
+
